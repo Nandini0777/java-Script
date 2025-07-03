@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style> 
+</head>
+<body>
+    <div id="div">
+    </div>
+    
+   <script>
+        /*let a =document.getElementById("div");
+       a.addEventListener("click", function() {
+            a.innerHTML="<h1>Div clicked!</h1>";
+            a.addEventListener("dblclick()", function() {
+                a.innerHTML="<h1>Div double clicked!</h1>";
+            });*/
+    
+        //syntax for adding event listener
+        //element.addEventListener(event, function, useCapture);
+        //event: the event to listen for (e.g., "click", "mouseover")
+    </script>
+    <script>
+      /*  let a=document.getElementById("div");
+        a.addEventListener("mouseover", function() {
+            a.innerHTML="<h1>Div hovered!</h1>";
+            a.style.backgroundColor="lightgreen";
+        });
+        a.addEventListener("mouseout", function() {
+            a.innerHTML="<h1>Div unhovered!</h1>";
+            a.style.backgroundColor="lightblue";
+        });*/
+    </script>
+    <script>
+        let a=document.getElementById("div");
+        a.addEventListener("mouseup", function() {
+            a.innerHTML="<h1>Mouse up!</h1>";
+            a.style.backgroundColor="lightcoral";
+            a.style.borderColor="darkred";
+            a.style.color="blue";
+            a.style.borderRadius="55px";
+        });
+        a.addEventListener("mousedown", function() {
+            a.innerHTML="<h1>Mouse down!</h1>";
+            a.style.backgroundColor="lightyellow";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="colorInput" placeholder="Enter a color name" />
+    <script>
+       /*  const colorMap = {
+    a: "aqua",
+    b: "blue",
+    c: "coral",
+    d: "darkcyan",
+    e: "darkorange",
+    f: "darkred",
+    g: "gold",
+    h: "yellowgreen",
+    i: "indigo",
+    j: "darkolivegreen",
+    k: "navy",
+    l: "lightcoral",
+    m: "magenta",
+    n: "blue",
+    o: "olive",
+    p: "purple",
+    q: "red",
+    r: "black",
+    s: "purple",
+    t: "tomato",
+    u: "violet",
+    v: "hotpink",
+    w: "wheat",
+    x: "yellow",
+    y: "pink",
+    z: "white"
+    }
+    document.body.addEventListener("keydown", function(e) {
+    const key = e.key.toLowerCase();
+    if (colorMap[key]) {
+        document.body.style.backgroundColor = colorMap[key];
+    } else {
+        alert("No color mapped to key: " + key);
+    }
+});*/
+document.getElementById("colorInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        const color = this.value.toLowerCase().trim();
+        document.body.style.backgroundColor = color;
+        this.value = ""; // clear input
+    }
+});
+    </script>
+</body>
+</html>

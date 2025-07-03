@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+       background-color:green;
+        color: black;
+       }
+    </style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style Demo</title>
+</head>
+<body>
+    <h1>Welcome to style demo</h1>
+    <br>
+    <p>This is a paragraph demonstrating the styles applied to this document.</p>
+
+    <button onclick="f()">Click Me</button>
+    <button onclick="document.body.style.backgroundColor = 'aquamarine';">Change Background Color</button>
+
+    <script>
+        function f() {
+            // Toggle background color
+           /* if(document.body.style.background==='aquamarine'){
+            document.body.style.background='blue';
+        }
+        else if(document.body.style.background==='red'){
+            document.body.style.background='aquamarine';
+        }
+            else{
+                document.body.style.background='red';
+            }
+           setInterval(() => {
+                document.body.style.backgroundColor = document.body.style.backgroundColor === 'aquamarine' ? 'blue' : 'aquamarine';
+            }, 200);
+            let a=document.body.style.backgroundColor;
+           
+            // Change text color
+        }
+        function g() {
+            let a = ["red", "blue", "green", "yellow"];
+            let i=0;
+            setInterval(() => {
+                document.body.style.backgroundColor = a[i];
+                i = (i+1) % a.length; // Loop through colors
+            }, 1000); // Change color every second
+        }*/ 
+       function diss() {
+        let div = document.querySelector('.division-block');
+        if (div.style.display === 'none') {
+            div.style.display = 'block';
+        } else {
+            div.style.display = 'none';
+        }
+       }
+       setInterval(() => {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'aquamarine' ? 'blue' : 'aquamarine';
+        }, 200);
+        let a = document.body.style.backgroundColor;
+        }
+        
+    </script>
+    <button onclick="g()">Change Color</button>
+    <button onclick="diss()">Toggle Division</button>
+        <!--Call the function to start changing text color-->
+</body>
+</html>
+
+
+    </script>
+</body>
+</html>

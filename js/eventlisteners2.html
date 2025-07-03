@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minimal Box</title>
+  <style>
+
+    #div {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+
+    #input {
+      margin-top: 20px;
+      padding: 5px;
+    }
+
+    #reset, #submit {
+      margin: 10px 5px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="div">Click Me</div>
+
+  <input type="text" id="input" placeholder="Type something...">
+  <br>
+  <!--<input type="reset" id="reset" value="Reset">
+  <input type="submit" id="submit" value="Submit">-->
+  <button id="reset">Reset</button>
+  <button id="submit">Submit</button>
+  <script>
+    let a = document.getElementById("input");
+    let b = document.getElementById("reset");
+    let c = document.getElementById("submit");
+
+    b.addEventListener("click", function() {
+      a.value = "";
+    });
+
+    c.addEventListener("click", function(event) { //prevent form submission
+      event.preventDefault();
+      alert("Form submitted with value: " + a.value);
+      
+    });
+  </script>
+</body>
+</html>
+
